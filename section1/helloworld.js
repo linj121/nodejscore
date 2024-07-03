@@ -1,6 +1,10 @@
 const http = require("node:http");
 const fs = require("node:fs/promises");
 
+/**
+ * Look at that! No more npm packages!
+ * No more frameworks or libraries! Just pure NodeJS :)
+ */
 const server = http.createServer();
 
 server.on("request", async (request, response) => {
@@ -16,5 +20,5 @@ server.on("request", async (request, response) => {
 });
 
 server.listen(4000, "127.0.0.1", () => {
-  console.log("Hello Motherfucker, the server is listening on:", server.address());
+  console.log("Hello motherfucker, the server is listening on:", server.address());
 });
